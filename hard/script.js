@@ -13,9 +13,15 @@ tomsbmiHigher = bmiTom > bmiJerry;
 
 console.log(`Is Tom's BMI higher than Jerry's? ${tomsbmiHigher}`);
 
+//I did the assigment again and created a BMI calculation function with different variables below
 let calcBMI = function(mass, height) {
     return mass / (height * height)
 }
 let tomsBMI = calcBMI(8, 9);
 let jerryBMI = calcBMI(45, 10)
-console.log(tomsBMI, jerryBMI);
+
+console.log(tomsBMI, jerryBMI);//equal BMI
+
+tomBMIHigher = tomsBMI > jerryBMI
+
+console.log(`Is Tom's BMI higher than Jerry's? ${tomBMIHigher}`)
